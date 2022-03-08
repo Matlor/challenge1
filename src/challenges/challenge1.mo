@@ -11,11 +11,9 @@ actor {
         return Nat.pow(n,n);
     };
 
-
     public func days_to_second(n : Nat) : async Nat {
         return n*24*60*60;
     };
-
 
     var counter: Nat = 0;
     public func increment_counter(n : Nat) : async Nat {
@@ -28,7 +26,7 @@ actor {
         return counter;
     };
     
-     public func divide(n : Nat, m: Nat) : async Bool {
+    public func divide(n : Nat, m: Nat) : async Bool {
         let mod: Nat = n%m;
         if(mod == 0){
             return true;
@@ -37,8 +35,7 @@ actor {
         }
     };
 
-
-      public func is_even(n : Nat) : async Bool {
+    public func is_even(n : Nat) : async Bool {
         let mod: Nat = n%2;
         if(mod == 0){
             return true;
@@ -47,11 +44,7 @@ actor {
         }
     };
 
-
-
-
-
-      public func sum_of_array(n : [Nat]) : async Nat {
+    public func sum_of_array(n : [Nat]) : async Nat {
         
         if(n.size() == 0){
             return 0;
@@ -64,8 +57,6 @@ actor {
             return sum;
         }
     };
-
-
 
     public func maximum(n : [Nat]) : async Nat {
         
@@ -85,7 +76,6 @@ actor {
             return max;
         };
     };
-
 
     public func remove_from_array(myArray : [Nat], n:Nat) : async [Nat] {
 
