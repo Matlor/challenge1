@@ -12,6 +12,10 @@
 			"main": "src/challenges/challenge3.mo",
 			"type": "motoko"
 		},
+		"challenge4": {
+			"main": "src/challenges/challenge4/main.mo",
+			"type": "motoko"
+		},
 		"challenge1_assets": {
 			"dependencies": ["challenge1"],
 			"frontend": {
