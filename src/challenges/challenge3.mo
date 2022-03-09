@@ -112,17 +112,25 @@ actor {
         return newArr;
     };
 
-
-   /*  public func contains<A>(array: [A], a:A): async [Nat] {
-        var index = 0; 
-        func addIndex(val: Nat): Nat {
-           index+=1; 
-           return val + index-1;
+    private func contains<A>(xs: [A], a:A, f:(A,A)->Bool): Bool {
+        for(x in xs.vals()){
+            if(f(a, x)){
+                return true;
+            };
         };
-        //let newArr = Array.map(array, addIndex);
-        return [3, 3];
-    }; */
+        return false;
+    }; 
 
+    public func test_contain(myarray : [Nat], a: Nat) : async Bool {
+        let compareFunc = func (a : Nat, b : Nat) : Bool {
+            if ( a == b ) {
+            return true;
+            };
+            return false;
+        };
+
+        return (contains<Nat>(myarray, a, compareFunc));
+    };
     
 };
 
