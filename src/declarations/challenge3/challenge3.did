@@ -1,4 +1,0 @@
-service : {
-  init_count: (nat) -> (vec nat);
-  seven: (vec nat) -> (text);
-}

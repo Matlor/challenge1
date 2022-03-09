@@ -4,11 +4,8 @@ import Custom "custom";
 import List "mo:base/List";
 import ListModule "list";
 
-
 actor {
     
-    
-
     let animal: Animal.Animal = {
         specie = "helix pomatia";
         energy = 19;
@@ -35,7 +32,6 @@ actor {
 
     let zoo: List.List<Animal.Animal> = List.nil<Animal.Animal>();
     
-
     public func push_animal(animal: Animal.Animal): async () {
         ignore List.push(animal, zoo);
     }; 
@@ -45,16 +41,16 @@ actor {
     }; 
 
 
+
+    // --- tests ---
+
     public func test_size(l:List.List<Nat>): async Nat {
         ListModule.size(l);
     };
 
-
     public func test_get(l: List.List<Nat>, n:Nat): async ?Nat{
         ListModule.get(l, n);
-
     };
-    
     
     public func test_reverse(l: List.List<Nat>): async List.List<Nat> { 
         ListModule.reverse(l);

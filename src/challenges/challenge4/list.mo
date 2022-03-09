@@ -2,14 +2,10 @@ import Array "mo:base/Array";
 import Debug "mo:base/Debug";
 import Iter "mo:base/Iter";
 
-
 module {
     
     type List<T> = ?(T, List<T>);
 
-
-    // the <T> on the function probably means something 
-    // like, I take a type as parameter.
     public func is_null<T>(l: List<T>): Bool {
         switch(l){
             case(null){
@@ -22,19 +18,18 @@ module {
         };
     };
 
-
     public func last<T>(l: List<T>): ?T {
-            switch(l){
-                case(null){
-                    return null;
-                };
-                case(?(x, null)){
-                    return ?x;
-                };
-                case(?(x, list)){
-                    last(list);
-                };
+        switch(l){
+            case(null){
+                return null;
             };
+            case(?(x, null)){
+                return ?x;
+            };
+            case(?(x, list)){
+                last(list);
+            };
+        };
     };
 
     public func size<T>(l: List<T>): Nat {

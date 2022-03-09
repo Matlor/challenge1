@@ -15,14 +15,6 @@
 		"challenge4": {
 			"main": "src/challenges/challenge4/main.mo",
 			"type": "motoko"
-		},
-		"challenge1_assets": {
-			"dependencies": ["challenge1"],
-			"frontend": {
-				"entrypoint": "src/challenge1_assets/src/index.html"
-			},
-			"source": ["src/challenge1_assets/assets", "dist/challenge1_assets/"],
-			"type": "assets"
 		}
 	},
 	"defaults": {
