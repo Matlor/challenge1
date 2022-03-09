@@ -8,6 +8,10 @@
 			"main": "src/challenges/challenge2.mo",
 			"type": "motoko"
 		},
+		"challenge3": {
+			"main": "src/challenges/challenge3.mo",
+			"type": "motoko"
+		},
 		"challenge1_assets": {
 			"dependencies": ["challenge1"],
 			"frontend": {
