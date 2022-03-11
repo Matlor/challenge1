@@ -15,6 +15,14 @@
 		"challenge4": {
 			"main": "src/challenges/challenge4/main.mo",
 			"type": "motoko"
+		},
+		"challenge5": {
+			"main": "src/challenges/challenge5/challenge5.mo",
+			"type": "motoko"
+		},
+		"stable": {
+			"main": "src/challenges/challenge5/stable.mo",
+			"type": "motoko"
 		}
 	},
 	"defaults": {

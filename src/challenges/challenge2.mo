@@ -6,7 +6,6 @@ import Iter "mo:base/Iter";
 import Blob "mo:base/Blob";
 import Array "mo:base/Array";
 
-// DIDN'T HAVE MUCH TIME, WILL TEST AND FINISH TOMORROW
 
 actor {
    
